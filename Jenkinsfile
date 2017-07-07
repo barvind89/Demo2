@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        bat(script: 'ant clean compile', encoding: 'utf-8')
+        bat(script: 'ant clean jar', encoding: 'utf-8')
       }
     }
     stage('Test') {
